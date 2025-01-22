@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컨테이너와 전역속성</title>
+</head>
+<body>
+    <p>
+        <h1>컨테이너 태그</h1>
+        콘텐츠나 레이아웃에 영향을 주지 않고, 내용을 구분하거나, 공통적인 스타일 적용하고자 할 때 유용
+    </p>
+    <div>
+        <p>행복하고 즐거워요~</p>
+        <p>HTML 공부!</p>
+    </div>
+    <div>
+        <p>슬프고 힘들어요</p>
+        <p>적게 먹고 운동하는 다이어트!</p>
+    </div>
+    <p>
+        <h1>인라인 컨테이너</h1>
+        블록 레벨 요소의 내부에서 콘텐츠를 영역/목적별 구분 역할을 하기도하고,<br>
+        css를 통한 스타일 적용을 위해 사용
+    </p>
+    <p>
+        예능 프로그램 즐겨 보시나요?
+        저는 <span>골때리는 그녀들</span> 재미있게 보고 있습니다!
+    </p>
+    <hr>
+    <p>
+        <h1>전역 속성(Global attribute)</h1>
+        모든 html 태그에서 공통적으로 사용할 수 있는 속성<br>
+        사용 빈도가 높은 대표적인 전역 속성<br>
+        id : 요소에 고유한 이름을 부여하는 식별자 역할<br>
+        class : 요소를 그룹 별로 묶을 수 있는 식별자 역할<br>
+        title : 요소에 대한 추가 정보를 기입할 수 있는 텍스트 속성, 사용자에게 툴팁 제공
+    </p>
+    <p>
+        <h2>고유한 식별자, id</h2>
+        스크립트 및 스타일 적용 시 특정 요소를 식별하기 위해 요소에 대한 고유식별자를 지정<br>
+        각 요소에 대한 id는 고유한 값
+    </p>
+    <div id="study">
+        <p>행복하고 즐거워요~</p>
+        <p>HTML 공부!</p>
+    </div>
+    <div id="diet">
+        <p>슬프고 힘들어요</p>
+        <p>적게 먹고 운동하는 다이어트!</p>
+    </div>
+    <blockquote>위 와 같이 id가 지정된 요소를 식별한 다음 스타일시트(CSS)나 스크립트(JavaScript)를 추가하곤 함</blockquote>
+    <p>
+        <h2>그룹화 식별자, class</h2>
+        여러 요소에 같은 이름의 식별자를 지정하여 요소를 그룹화할 수 있는 식별자<br>
+        id와 마찬가지로 스크립트 및 스타일 적용 시 특정 요소를 식별하기 위해 사용
+    </p>
+    <div>
+        <p class="text content">행복하고 즐거워요~</p>
+        <p class="text content">HTML 공부!</p>
+    </div>
+    <div>
+        <p class="text content">슬프고 힘들어요</p>
+        <p class="text content">적게 먹고 운동하는 다이어트!</p>
+    </div>
+    <blockquote>
+        class 속성은 하나의 요소가 여러 개의 식별자를 가질 수 있음.<br>
+        만일 요소가 두 개 이상의 class값을 가지기 원한다면, 위 예제와 같이 공백을 이용해 값을 구분 필요
+    </blockquote>
+    <p>
+        <h2>요소를 설명하는 추가 텍스트, title</h2>
+        요소와 관련된 추가 정보 제공 텍스트 표현<br>
+        렌더링 되고 난 후의 결과물에 마우스를 얹었을 때 툴팁(tooltip)이 나옴
+        <p title="현재의 심정">화창한 날씨... 어디론가 떠나고 싶다!</p>
+    </p>
+</body>
+</html>
